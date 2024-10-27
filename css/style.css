@@ -767,7 +767,7 @@ a:focus {
     text-align: center;
     width: 45px;
     height: 35px;
-    background: #FF6F61;
+    background: #1dc5da;
     transition: 0.2s linear;
 }
 
@@ -785,7 +785,7 @@ a:focus {
 
 .portfolio .portfolio-item figure .link-preview:hover i,
 .portfolio .portfolio-item figure .link-details:hover i {
-    color: #FF6F61;
+    color: #1dc5da;
 }
 
 .portfolio .portfolio-item figure .link-preview {
@@ -809,7 +809,7 @@ a:focus {
     color: #222222;
     font-size: 16px;
     font-weight: 600;
-    background: rgba(255, 111, 97, .5);
+    background: rgba(97, 234, 255, 0.5);
     border-radius: 0;
 }
 
@@ -890,7 +890,7 @@ a:focus {
 }
 
 .review .review-text .ratting i {
-    color: #FF6F61;
+    color: #1dc5da;
     font-size: 14px;
 }
 
@@ -909,7 +909,7 @@ a:focus {
     z-index: 1;
     opacity: 0;
     transition: .5s;
-    background: rgba(255, 111, 97, .7);
+    background: rgba(97, 255, 247, 0.7);
 }
 
 .review-slider .slick-prev {
@@ -941,7 +941,7 @@ a:focus {
 .review-slider .slick-prev:focus::before,
 .review-slider .slick-next:hover::before,
 .review-slider .slick-next:focus::before {
-    color: #FF6F61;
+    color: #1dc5da;
 }
 
 .review-slider .slick-prev::before,
@@ -970,7 +970,7 @@ a:focus {
 }
 
 .review-slider .slick-dots li.slick-active button:before {
-    color: #FF6F61;
+    color: #1dc5da;
 }
 
 .review-slider.slick-slider {
@@ -1035,7 +1035,7 @@ a:focus {
 }
 
 .contact .social a:hover {
-    color: #FF6F61;
+    color: #1dc5da;
     background: #222222;
 }
 
@@ -1051,18 +1051,18 @@ a:focus {
 
 .contact .form .form-control:focus {
     box-shadow: none;
-    border-color: #FF6F61;
+    border-color: #1dc5da;
 }
 
 .contact .form .btn {
     color: #222222;
-    background: #FF6F61;
+    background: #1dc5da;
     border-radius: 0;
     transition: all .3s;
 }
 
 .contact .form .btn:hover {
-    color: #FF6F61;
+    color: #1dc5da;
     background: #222222;
 }
 
@@ -1094,7 +1094,7 @@ a:focus {
 }
 
 .footer a {
-    color: #FF6F61;
+    color: #1dc5da;
     font-weight: 600;
 }
 
