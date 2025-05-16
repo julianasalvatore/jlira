@@ -3,7 +3,7 @@
 /**********************************/
 body {
     color: #666666;
-    background: #707372;
+    background: #F6D155;
     font-family: 'Open Sans', sans-serif;
 }
 
@@ -15,7 +15,7 @@ a {
 a:hover,
 a:active,
 a:focus {
-    color: #1dc5da;
+    color: #FF6F61;
     outline: none;
     text-decoration: none;
 }
@@ -47,7 +47,7 @@ a:focus {
     width: 100%;
     padding: 15px;
     float: left;
-    background: #707372;
+    background: #F6D155;
 }
 
 .wrapper .sidebar-header,
@@ -62,7 +62,7 @@ a:focus {
 
 .navbar-expand-md .navbar-nav .nav-item {
     width: 100%;
-    border-top: 1px solid rgba(212, 11, 11, 0.2);
+    border-top: 1px solid rgba(255, 255, 255, .2);
 }
 
 .navbar-expand-md .navbar-nav .nav-item:first-child{
@@ -76,7 +76,7 @@ a:focus {
 }
 
 .navbar-expand-md .navbar-nav .nav-link i {
-    color: #d8e1db;
+    color: #FF6F61;
     float: right;
     padding-top: 5px;
     transition: all .3s;
@@ -84,7 +84,7 @@ a:focus {
 
 .navbar-expand-md .navbar-nav .nav-link:hover,
 .navbar-expand-md .navbar-nav .nav-link.active {
-    color: #1dc5da;
+    color: #FF6F61;
 }
 
 .navbar-expand-md .navbar-nav .nav-link:hover i,
@@ -112,7 +112,7 @@ a:focus {
         content: "";
         width: 100%;
         height: 30px;
-        background: #707372;
+        background: #F6D155;
         z-index: 1;
     }
     
@@ -208,7 +208,7 @@ a:focus {
         text-align: center;
         font-size: 18px;
         color: #222222;
-        background: #d8e1db;
+        background: #FF6F61;
     }
     
     .sidebar .sidebar-footer a:last-child {
@@ -216,7 +216,7 @@ a:focus {
     }
     
     .sidebar .sidebar-footer a:hover {
-        color: #d8e1db;
+        color: #FF6F61;
         background: #ffffff;
     }
     
@@ -285,7 +285,7 @@ a:focus {
 }
 
 .back-to-top i:hover {
-    color: #d8e1db;
+    color: #FF6F61;
 }
 
 .back-to-top {
@@ -313,13 +313,13 @@ a:focus {
 }
 
 .header .content-inner {
-    padding: 100px 20px;
-    background: url(../img/capaa.jpeg) right bottom no-repeat;
+    padding: 100px 30px;
+    background: url(../img/profile.png) right bottom no-repeat;
     background-size: contain;
 }
 
 .header p {
-    color: ##d8e1db;
+    color: #FF6F61;
     font-size: 22px;
     font-weight: 600;
     margin-bottom: 10px;
@@ -350,14 +350,14 @@ a:focus {
 
 .large-btn .content-inner {
     font-size: 0;
-    border-bottom: 30px solid #707372;
+    border-bottom: 30px solid #F6D155;
 }
 
 .large-btn .btn {
     position: relative;
     width: 50%;
     padding: 15px 0;
-    color: #d8e1db;
+    color: #FF6F61;
     font-size: 20px;
     background: #222222;
     border-radius: 0;
@@ -365,7 +365,7 @@ a:focus {
 
 .large-btn .btn:last-child {
     color: #222222;
-    background: #d8e1db;
+    background: #FF6F61;
 }
 
 .large-btn .btn i {
@@ -414,7 +414,7 @@ a:focus {
     height: 3px;
     bottom: 0;
     left: 0;
-    background: #1dc5da;
+    background: #FF6F61;
 }
 
 
@@ -425,7 +425,7 @@ a:focus {
     position: relative;
     padding: 60px 30px;
     background: #ffffff;
-    border-bottom: 30px solid #707372;
+    border-bottom: 30px solid #F6D155;
 }
 
 
@@ -443,12 +443,12 @@ a:focus {
 .about .btn {
     border-radius: 0;
     color: #222222;
-    background: #c7cec9;
+    background: #FF6F61;
     transition: all .3s;
 }
 
 .about .btn:hover {
-    color: #d8e1db;
+    color: #FF6F61;
     background: #222222;
 }
 
@@ -473,14 +473,14 @@ a:focus {
 
 .about .progress {
     height: 5px;
-    border: 1px solid #1dc5da;
+    border: 1px solid #FF6F61;
     border-radius: 0;
     background: #ffffff;
 }
 
 .about .progress .progress-bar {
     width: 1px;
-    background: #1dc5da;
+    background: #FF6F61;
     border-radius: 0;
     transition: 1s;
 }
@@ -493,15 +493,15 @@ a:focus {
     position: relative;
     padding: 60px 30px;
     background: #ffffff;
-    border-bottom: 30px solid #707372;
+    border-bottom: 30px solid #F6D155;
 }
 
 .education .edu-col {
     position: relative;
     width: 100%;
     padding: 20px 0 20px 20px;
-    border-left: 1px solid #1dc5da;
-    border-bottom: 1px solid #1dc5da;
+    border-left: 1px solid #FF6F61;
+    border-bottom: 1px solid #FF6F61;
 }
 
 .education .col-md-6:first-child .edu-col {
@@ -538,14 +538,14 @@ a:focus {
     content: "";
     width: 11px;
     height: 11px;
-    background: #1dc5da;
+    background: #FF6F61;
     top: 5px;
     left: -26px;
     border-radius: 5px;
 }
 
 .education .edu-col span i {
-    color: #1dc5da;
+    color: #FF6F61;
 }
 
 .education .edu-col h3 {
@@ -566,15 +566,15 @@ a:focus {
     position: relative;
     padding: 60px 30px;
     background: #ffffff;
-    border-bottom: 30px solid #707372;
+    border-bottom: 30px solid #F6D155;
 }
 
 .experience .exp-col {
     position: relative;
     width: 100%;
     padding: 20px 0 20px 20px;
-    border-left: 1px solid #1dc5da;
-    border-bottom: 1px solid #1dc5da;
+    border-left: 1px solid #FF6F61;
+    border-bottom: 1px solid #FF6F61;
 }
 
 .experience .col-md-6:first-child .exp-col {
@@ -611,14 +611,14 @@ a:focus {
     content: "";
     width: 11px;
     height: 11px;
-    background: #1dc5da;
+    background: #FF6F61;
     top: 5px;
     left: -26px;
     border-radius: 5px;
 }
 
 .experience .exp-col span i {
-    color: #1dc5da;
+    color: #FF6F61;
 }
 
 .experience .exp-col h3 {
@@ -653,7 +653,7 @@ a:focus {
     position: relative;
     padding: 60px 30px 30px 30px;
     background: #ffffff;
-    border-bottom: 30px solid #707372;
+    border-bottom: 30px solid #F6D155;
 }
 
 .service .srv-col {
@@ -664,7 +664,7 @@ a:focus {
 
 .service .srv-col i {
     font-size: 30px;
-    color: #1dc5da;
+    color: #FF6F61;
     margin-bottom: 15px;
 }
 
@@ -700,7 +700,7 @@ a:focus {
     position: relative;
     padding: 60px 30px 30px 30px;
     background: #ffffff;
-    border-bottom: 30px solid #707372;
+    border-bottom: 30px solid #F6D155;
 }
 
 .portfolio #portfolio-flters {
@@ -720,14 +720,14 @@ a:focus {
     font-size: 13px;
     line-height: 15px;
     text-transform: uppercase;
-    border: 1px solid #1dc5da;
+    border: 1px solid #FF6F61;
     background: #ffffff;
     transition: all 0.3s ease-in-out;
 }
 
 .portfolio #portfolio-flters li:hover,
 .portfolio #portfolio-flters li.filter-active {
-    background: #1dc5da;
+    background: #FF6F61;
     color: #222222;
 }
 
@@ -767,7 +767,7 @@ a:focus {
     text-align: center;
     width: 45px;
     height: 35px;
-    background: #1dc5da;
+    background: #FF6F61;
     transition: 0.2s linear;
 }
 
@@ -785,7 +785,7 @@ a:focus {
 
 .portfolio .portfolio-item figure .link-preview:hover i,
 .portfolio .portfolio-item figure .link-details:hover i {
-    color: #1dc5da;
+    color: #FF6F61;
 }
 
 .portfolio .portfolio-item figure .link-preview {
@@ -809,7 +809,7 @@ a:focus {
     color: #222222;
     font-size: 16px;
     font-weight: 600;
-    background: rgba(97, 234, 255, 0.5);
+    background: rgba(255, 111, 97, .5);
     border-radius: 0;
 }
 
@@ -842,162 +842,12 @@ a:focus {
 
 
 /**********************************/
-/********** Certificados CSS *********/
-/**********************************/
-.certificados {
-    position: relative;
-    padding: 60px 30px 30px 30px;
-    background: #ffffff;
-    border-bottom: 30px solid #707372;
-}
-
-.certificados #certificados-flters {
-    padding: 0;
-    margin: -15px 0 30px 0;
-    list-style: none;
-    font-size: 0;
-}
-
-.certificados #certificados-flters li {
-    cursor: pointer;
-    margin: 15px -1px 0 0;
-    display: inline-block;
-    height: 35px;
-    padding: 10px;
-    color: #666666;
-    font-size: 13px;
-    line-height: 15px;
-    text-transform: uppercase;
-    border: 1px solid #1dc5da;
-    background: #ffffff;
-    transition: all 0.3s ease-in-out;
-}
-
-.certificados #certificados-flters li:hover,
-.certificados #certificados-flters li.filter-active {
-    background: #1dc5da;
-    color: #222222;
-}
-
-.certificados .certificados-item {
-    position: relative;
-    height: 250px;
-    overflow: hidden;
-}
-
-.certificados .certificados-item figure {
-    background: #ffffff;
-    overflow: hidden;
-    height: 220px;
-    position: relative;
-    border-radius: 0;
-    margin: 0; 
-}
-
-.certificados .certificados-item figure img {
-    width: 100%; 
-    height: 100%; 
-    object-fit: contain; 
-}
-
-/*/* acima onte ta object-fit: contain;   e  object-fit: couver; /*/ 
-
-.certificados .certificados-item figure:hover img {
-    opacity: 0.3;
-    transition: 0.3s;
-}
-
-.certificados .certificados-item figure .link-preview,
-.certificados .certificados-item figure .link-details,
-.certificados .certificados-item figure .certificados-title {
-    position: absolute;
-    display: inline-block;
-    opacity: 0;
-    line-height: 1;
-    text-align: center;
-    width: 45px;
-    height: 35px;
-    background: #1dc5da;
-    transition: 0.2s linear;
-}
-
-.certificados .certificados-item figure .link-preview i,
-.certificados .certificados-item figure .link-details i {
-    color: #222222;
-    padding-top: 10px;
-    font-size: 16px;
-}
-
-.certificados .certificados-item figure .link-preview:hover,
-.certificados .certificados-item figure .link-details:hover {
-    background: #222222;
-}
-
-.certificados.certificados-item figure .link-preview:hover i,
-.certificados .certificados-item figure .link-details:hover i {
-    color: #1dc5da;
-}
-
-.certificados .certificados-item figure .link-preview {
-    left: 50%;
-    top: calc(25% - 18px);
-}
-
-.certificados .certificados-item figure .link-details {
-    right: 50%;
-    top: calc(25% - 18px);
-}
-
-.certificados .certificados-item figure .certificados-title {
-    margin: 0;
-    width: 100%;
-    height: 50%;
-    left: 0;
-    right: 0;
-    top: 100%;
-    padding: 30px 10px;
-    color: #222222;
-    font-size: 16px;
-    font-weight: 600;
-    background: rgba(97, 234, 255, 0.5);
-    border-radius: 0;
-}
-
-.certificados .certificados-item figure .certificados-title:hover {
-    text-decoration: none;
-}
-
-.certificados .certificados-item figure .certificados-title span {
-    display: block;
-    margin-top: 10px;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 13px;
-    font-weight: 300;
-}
-
-.certificados .certificados-item figure:hover .link-preview {
-    opacity: 1;
-    left: calc(50% - 61px);
-}
-
-.certificados .certificados-item figure:hover .link-details {
-    opacity: 1;
-    right: calc(50% - 61px);
-}
-
-.certificados .certificados-item figure:hover .certificados-title {
-    opacity: 1;
-    top: 50%;
-}
-
-
-/**********************************/
 /*********** Review CSS ***********/
 /**********************************/
 .review {
     position: relative;
     background: #ffffff;
-    border-bottom: 30px solid #707372;
+    border-bottom: 30px solid #F6D155;
 }
 
 .review .content-inner {
@@ -1040,7 +890,7 @@ a:focus {
 }
 
 .review .review-text .ratting i {
-    color: #1dc5da;
+    color: #FF6F61;
     font-size: 14px;
 }
 
@@ -1059,7 +909,7 @@ a:focus {
     z-index: 1;
     opacity: 0;
     transition: .5s;
-    background: rgba(97, 255, 247, 0.7);
+    background: rgba(255, 111, 97, .7);
 }
 
 .review-slider .slick-prev {
@@ -1091,7 +941,7 @@ a:focus {
 .review-slider .slick-prev:focus::before,
 .review-slider .slick-next:hover::before,
 .review-slider .slick-next:focus::before {
-    color: #1dc5da;
+    color: #FF6F61;
 }
 
 .review-slider .slick-prev::before,
@@ -1120,7 +970,7 @@ a:focus {
 }
 
 .review-slider .slick-dots li.slick-active button:before {
-    color: #1dc5da;
+    color: #FF6F61;
 }
 
 .review-slider.slick-slider {
@@ -1152,7 +1002,7 @@ a:focus {
 
 .contact .contact-info p i {
     width: 25px;
-    color: #d8e1db1;
+    color: #FF6F61;
 }
 
 .contact .contact-info p a {
@@ -1160,7 +1010,7 @@ a:focus {
 }
 
 .contact .contact-info p a:hover {
-    color: #d8e1db;
+    color: #FF6F61;
     text-decoration: none;
 }
 
@@ -1173,7 +1023,7 @@ a:focus {
     height: 35px;
     padding: 5px 0;
     color: #222222;
-    background: #d8e1db1;
+    background: #FF6F61;
     border-radius: 0;
     margin-top: 15px;
     margin-right: 15px;
@@ -1185,7 +1035,7 @@ a:focus {
 }
 
 .contact .social a:hover {
-    color: #1dc5da;
+    color: #FF6F61;
     background: #222222;
 }
 
@@ -1201,18 +1051,18 @@ a:focus {
 
 .contact .form .form-control:focus {
     box-shadow: none;
-    border-color: #1dc5da;
+    border-color: #FF6F61;
 }
 
 .contact .form .btn {
     color: #222222;
-    background: #1dc5da;
+    background: #FF6F61;
     border-radius: 0;
     transition: all .3s;
 }
 
 .contact .form .btn:hover {
-    color: #1dc5da;
+    color: #FF6F61;
     background: #222222;
 }
 
@@ -1224,7 +1074,7 @@ a:focus {
     position: relative;
     width: 100%;
     padding: 30px 30px 0 30px;
-    background: #707372;
+    background: #F6D155;
 }
 
 .footer .col-md-6:last-child {
@@ -1239,12 +1089,12 @@ a:focus {
 }
 
 .footer p {
-    color: #ffffff;
+    color: #222222;
     margin: 0;
 }
 
 .footer a {
-    color: #1dc5da;
+    color: #FF6F61;
     font-weight: 600;
 }
 
