@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Um Pedido Especial ❤️</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to right, #ffe6f0, #ffe0cc);
+      text-align: center;
+      padding: 20px;
+    }
+
+    .container {
+      max-width: 600px;
+      margin: auto;
+      background-color: white;
+      padding: 30px;
+      border-radius: 20px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.1);
+    }
+
+    h1 {
+      color: #d6336c;
+    }
+
+    .heart {
+      font-size: 40px;
+      cursor: pointer;
+      transition: transform 0.3s;
+    }
+
+    .heart:hover {
+      transform: scale(1.2);
+    }
+
+    #challenge, #final-question, #result {
+      display: none;
+    }
+
+    .button {
+      padding: 10px 20px;
+      margin: 10px;
+      font-size: 16px;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      background-color: #ff80aa;
+      color: white;
+    }
+
+    .button:hover {
+      background-color: #e05588;
+    }
+
+    .gif {
+      max-width: 100%;
+      margin-top: 20px;
+      border-radius: 12px;
+    }
+
+    @media (max-width: 600px) {
+      .heart {
+        font-size: 30px;
+      }
+    }
+
+    .fade-in {
+      animation: fadeIn 1.5s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+      0% { opacity: 0; transform: scale(0.95); }
+      100% { opacity: 1; transform: scale(1); }
+    }
+
+    iframe {
+      margin-top: 20px;
+      border-radius: 12px;
+      width: 100%;
+      height: 315px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Oi... posso te fazer um pedido? 💌</h1>
+    
+    <div id="intro">
+      <p>Antes, você topa um pequeno desafio?</p>
+      <button class="button" onclick="startChallenge()">Sim! Vamos lá 💖</button>
+    </div>
+
+    <div id="challenge">
+      <p>Clique nos 3 corações abaixo 💗💗💗</p>
+      <span class="heart" onclick="clickHeart(this)">💗</span>
+      <span class="heart" onclick="clickHeart(this)">💗</span>
+      <span class="heart" onclick="clickHeart(this)">💗</span>
+    </div>
+
+    <div id="final-question">
+      <h2>Agora que você chegou até aqui...</h2>
+      <p>Quero te dizer que você é alguém muito especial pra mim. Sua presença ilumina meus dias e eu me sinto transbordar quando estou ao seu lado. 💕</p>
+      <h3>Aceita uma aventura comigo? Pensa bem!!! Vão ter muitos momentos bons e maravilhosos, mas também momentos difíceis. Então pensa bem</h3>
+      <br>
+      <button class="button" onclick="responder('sim')">Sim! 💘</button>
+      <button class="button" onclick="responder('amizade')">Prefiro a amizade por enquanto</button>
+      <button class="button" onclick="responder('nao')">Não</button>
+    </div>
+
+    <div id="result" class="fade-in"></div>
+  </div>
+
+  <script>
+    let heartsClicked = 0;
+
+    function startChallenge() {
+      document.getElementById('intro').style.display = 'none';
+      document.getElementById('challenge').style.display = 'block';
+    }
+
+    function clickHeart(el) {
+      if (!el.classList.contains('clicked')) {
+        el.classList.add('clicked');
+        el.style.opacity = '0.3';
+        heartsClicked++;
+      }
+
+      if (heartsClicked === 3) {
+        document.getElementById('challenge').style.display = 'none';
+        document.getElementById('final-question').style.display = 'block';
+      }
+    }
+
+    function responder(resposta) {
+      document.getElementById('final-question').style.display = 'none';
+      const resultDiv = document.getElementById('result');
+      resultDiv.style.display = 'block';
+
+      if (resposta === 'sim') {
+        resultDiv.innerHTML = `
+          <h2>💖 Você disse SIM! 💖</h2>
+          <p>Você me fez a pessoa mais feliz do mundo! Que comece nosso compromisso juntas! 🥰</p>
+        `;
+      } else if (resposta === 'amizade') {
+        resultDiv.innerHTML = `
+          <h2>🫂 Amizade é um presente 🌟</h2>
+          <p>Nem todo "não" é o fim — às vezes é só um "ainda não". Respeito, carinho e paciência são essenciais, e sua presença já é valiosa pra mim 💖</p>
+        `;
+      } else {
+        resultDiv.innerHTML = `
+          <h2>🌷 Agradeço sua sinceridade 🌷</h2>
+          <p> Eu entendo perfeitamente. Nossa amizade já é algo lindo e muito especial pra mim, sempre foi, que continue sendo</p>
+        `;
+      }
+    }
+  </script>
+</body>
+</html>
