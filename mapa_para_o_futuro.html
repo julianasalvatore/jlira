@@ -86,10 +86,10 @@
 </head>
 <body>
   <div class="container">
-    <h1>Oi... posso te fazer um pedido? 💌</h1>
+    <h1>Oi... quero te fazer um pedido, posso? 💌</h1>
     
     <div id="intro">
-      <p>Antes, você topa um pequeno desafio?</p>
+      <p>Antes, um pequeno desafio, você topa?</p>
       <button class="button" onclick="startChallenge()">Sim! Vamos lá 💖</button>
     </div>
 
@@ -102,8 +102,31 @@
 
     <div id="final-question">
       <h2>Agora que você chegou até aqui...</h2>
-      <p>Quero te dizer que você é alguém muito especial pra mim. Sua presença ilumina meus dias e eu me sinto transbordar quando estou ao seu lado. 💕</p>
-      <h3>Aceita uma aventura comigo? Pensa bem!!! Vão ter muitos momentos bons e maravilhosos, mas também momentos difíceis. Então pensa bem</h3>
+      <p style="text-align: left;">
+       Minha pequena, minha princesa, minha rainha...
+       <br>
+      <p style="text-align: left;">Quero te dizer que você é alguém muito especial pra mim. Sua presença ilumina meus dias e eu me sinto transbordar quando estou ao seu lado.<br>
+       
+        <p style="text-align: left;">Amor da minha vida.<br>
+
+        <p style="text-align: left;">Eu poderia tentar encontrar as palavras perfeitas, mas talvez nenhuma seja suficiente pra dizer o quanto você é importante pra mim.
+        Você me ensina sobre paciência e as vezes sem dizer uma palavra, me cuida com gestos que falam mais que promessas, e me envolve num carinho que acalma até os dias mais difíceis, mesmo estando longe geografiamente.
+        Te admiro mais a cada sorriso seu, a cada detalhe que te faz única, a cada vez que fala sobre seus sonhos, metas e objetivos.
+
+        <p style="text-align: left;">Não sei o que o amanhã nos reserva — e, sinceramente, não preciso saber.
+        Quero apenas viver um dia de cada vez ao seu lado. Sem precisar provar nada pro mundo, porque o que existe entre nós é maior do que qualquer aparência, e é só nosso.
+
+        <p style="text-align: left;">Não te ofereço um compromisso moldado pelas expectativas dos outros. Não precisamos mostrar ou provar nada pra ninguém.
+        <p style="text-align: left;">Te ofereço um compromisso feito de olhares, de respeito, de cuidado e de entrega.
+        <p style="text-align: left;">Entre nós. Por nós. Só eu e você.
+
+        <p style="text-align: left;">E que seja assim...
+        Do nosso jeito, no nosso tempo, com o nosso amor
+        <p style="text-align: left;">Você aceita esse compromisso? Aceita uma aventura comigo? 💍❤️💕
+        
+        <p style="text-align: left;">Pensa bem!!! Ainda dá tempo de repensar suas escolhas, tempo de fugir.</p>
+      <h3>Pensa bem...</h3>
+      <img class="gif" src="https://24.media.tumblr.com/58384459dcb6f9545c70e9ad6a4303ae/tumblr_mi0nn3jml71s476rbo1_500.gif" alt="pergunta">
       <br>
       <button class="button" onclick="responder('sim')">Sim! 💘</button>
       <button class="button" onclick="responder('amizade')">Prefiro a amizade por enquanto</button>
@@ -142,19 +165,45 @@
       if (resposta === 'sim') {
         resultDiv.innerHTML = `
           <h2>💖 Você disse SIM! 💖</h2>
-          <p>Você me fez a pessoa mais feliz do mundo! Que comece nosso compromisso juntas! 🥰</p>
-        `;
+          <p style="text-align: left;">Você me fez a pessoa mais feliz do mundo, minha pequena, minha rainha.
+          <p style="text-align: left;">Não quero pressa nem promessas para o mundo — quero um dia de cada vez, só nosso, construindo nossos dias juntinhas (eu sei, tem a questão geografica, mas vamso dar um jeito rsrs).
+          <p style="text-align: left;">Com muita conversa, paciência, aquelas piadas ruins que só a gente entende (e as vezes nem a gente entende), declarações bregas que fazem o coração sorrir, e dividindo todos os nossos sonhos, todos mesmo 😈💖</p>
+          <img class="gif" src="https://i.redd.it/9raird0gfz1d1.gif" alt="Comemoração">
+
+       `;
+        enviarTelegram("Ela disse SIM! 💍❤️ Que comece a aventura juntas!");
       } else if (resposta === 'amizade') {
         resultDiv.innerHTML = `
           <h2>🫂 Amizade é um presente 🌟</h2>
-          <p>Nem todo "não" é o fim — às vezes é só um "ainda não". Respeito, carinho e paciência são essenciais, e sua presença já é valiosa pra mim 💖</p>
+          <p>Nem todo "não" é o fim — às vezes é só um "ainda não". Respeito, carinho e paciência são essenciais, você é muito valiosa pra mim </p>
+          <img class="gif" src="https://i.gifer.com/8CU.gif" alt="Stitch dando abraço">
         `;
+        enviarTelegram("Ela disse que prefere amizade por enquanto!");
       } else {
         resultDiv.innerHTML = `
           <h2>🌷 Agradeço sua sinceridade 🌷</h2>
-          <p> Eu entendo perfeitamente. Nossa amizade já é algo lindo e muito especial pra mim, sempre foi, que continue sendo</p>
+          <p>Eu entendo perfeitamente. Nossa amizade já é algo lindo e muito especial pra mim, sempre foi, que continuará sendo</p>
+          <img class="gif" src="https://y.yarn.co/688d88b9-ee58-4d74-9e26-b729920762f5_text.gif" alt="Stitch triste">
         `;
+         enviarTelegram("Ela disse que não");
       }
+    }
+
+    function enviarTelegram(msg) {
+      const token = '7508349020:AAEva-rrifb2cnLK0psWd9R5SbX_pssZOck'; // Substitua por seu token real do Bot
+      const chatId = '177161170';     // Substitua pelo seu ID do Telegram
+      const url = `https://api.telegram.org/bot${token}/sendMessage`;
+
+      fetch(url, {
+        method: 'POST',
+        headers: {'Content-Type': 'application/json'},
+        body: JSON.stringify({
+          chat_id: chatId,
+          text: msg
+        })
+      }).then(response => response.json())
+        .then(data => console.log('Mensagem enviada ao Telegram:', data))
+        .catch(error => console.error('Erro ao enviar mensagem:', error));
     }
   </script>
 </body>
